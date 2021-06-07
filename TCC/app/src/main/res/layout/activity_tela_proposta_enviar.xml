@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/estilo_tela"
+    android:layout_height="match_parent">
+    tools:context="com.example.quemtocahoje.Views.TelaProposta">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:src="@drawable/logoaplicativo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="Proposta"
+            android:textSize="30dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Para: "
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:id="@+id/txtDePara"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:id="@+id/lblNomeDestinatario"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Data: "
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/txtDataPropostaEscolhida"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:backgroundTint="#fff"
+                android:enabled="false"
+                android:inputType="date" />
+
+            <ImageButton
+                android:id="@+id/imgSelecionarDataProposta"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@android:color/white"
+                android:src="@mipmap/img_calendario" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblHoraI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Horário Início:"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/edtHorarioProposta"
+                android:layout_width="200dp"
+                android:layout_height="47dp"
+                android:lines="3"
+                android:maxLines="3"
+                android:backgroundTint="#fff"
+                android:focusable="false"
+                android:enabled="false"
+                android:textSize="20dp" />
+
+            <ImageButton
+                android:id="@+id/imgSelecionarHorarioInicio"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@android:color/white"
+                android:src="@drawable/clock_circular_outline"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblHoraF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:text="Horário Fim:"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/edtHorarioFim"
+                android:layout_width="216dp"
+                android:layout_height="47dp"
+                android:lines="3"
+                android:backgroundTint="#fff"
+                android:maxLines="3"
+                android:focusable="false"
+                android:enabled="false"
+                android:textSize="20dp" />
+
+            <ImageButton
+                android:id="@+id/imgSelecionarHorarioFim"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@android:color/white"
+                android:src="@drawable/clock_circular_outline"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Local: "
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/edtLocalProposta"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:lines="3"
+                android:background="@drawable/estilo_background_edittext"
+                android:maxLines="3"
+                android:text=""
+                android:layout_marginTop="0dp"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/txtCache"
+                android:text="Cache: "
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/edtCacheProposta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="0.00"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:backgroundTint="#fff"
+                android:inputType="number"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/txtDescricaoProposta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Descrição: "
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/edtDescricaoProposta"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/txtDescricaoProposta"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/estilo_edittext_cadastros"
+                android:gravity="top"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnEnviarProposta"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Enviar"
+                android:background="@drawable/estilo_botao"
+                android:textColor="#F5F7F7"
+                android:textSize="14dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnRecusarProposta"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Recusar"
+                android:background="@drawable/estilo_botao"
+                android:textColor="#F5F7F7"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                 />
+
+            <Button
+                android:id="@+id/btnVoltarProposta"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Voltar"
+                android:background="@drawable/estilo_botao"
+                android:textColor="#F5F7F7"
+                android:textSize="14dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

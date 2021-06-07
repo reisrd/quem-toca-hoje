@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/estilo_tela"
+    tools:context="com.example.quemtocahoje.Views.TelaCadastroEspectador">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            app:srcCompat="@drawable/logoaplicativo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:text="Perfil:"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text"
+                android:id="@+id/rgpPerfil"
+                android:orientation="horizontal"
+                android:backgroundTint="#fff"
+                android:checkedButton="@+id/rbMusico" >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbMusico"
+                    android:text="Músico"
+                    android:textSize="14dp"
+                    android:textColor="#F5F7F7"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbEstabelecimento"
+                    android:text="Estabelecimento"
+                    android:textSize="14dp"
+                    android:textColor="#F5F7F7"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbEspectador"
+                    android:text="Espectador"
+                    android:textSize="14dp"
+                    android:textColor="#F5F7F7"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="left"
+                android:text="Nome"/>
+
+            <EditText
+                android:id="@+id/edtNomeEspectador"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:cursorVisible="true"
+                android:gravity="center"
+                android:hint=""
+                android:inputType="text"
+                android:textColor="#000"
+                android:textCursorDrawable="@drawable/estilo_cursor"
+                android:background="@drawable/estilo_edittext_cadastros"
+                android:textColorHint="#000"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="left"
+                android:text="E-mail"/>
+
+            <EditText
+                android:id="@+id/edtEmailEspectador"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:cursorVisible="true"
+                android:gravity="center"
+                android:hint=""
+                android:inputType="textEmailAddress"
+                android:textColor="#000"
+                android:background="@drawable/estilo_edittext_cadastros"
+                android:textCursorDrawable="@drawable/estilo_cursor"
+                android:textColorHint="#000"
+                android:textSize="15dp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="left"
+                android:text="Login"/>
+            <EditText
+                android:id="@+id/edtLoginEspectador"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:cursorVisible="true"
+                android:gravity="center"
+                android:hint=""
+                android:inputType="text"
+                android:textColor="#000"
+                android:background="@drawable/estilo_edittext_cadastros"
+                android:textCursorDrawable="@drawable/estilo_cursor"
+                android:textColorHint="#000"
+                android:textSize="15dp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                android:text="Senha"/>
+
+            <EditText
+                android:id="@+id/edtSenhaEspectador"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:cursorVisible="true"
+                android:gravity="center"
+                android:hint=""
+                android:inputType="textPassword"
+                android:textColor="#000"
+                android:background="@drawable/estilo_edittext_cadastros"
+                android:textCursorDrawable="@drawable/estilo_cursor"
+                android:textColorHint="#000"
+                android:textSize="15dp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                android:text="Confirmar Senha"/>
+            <EditText
+                android:id="@+id/edtConfirmarSenhaEspectador"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:cursorVisible="true"
+                android:gravity="center"
+                android:hint=""
+                android:inputType="textPassword"
+                android:textColor="#000"
+                android:background="@drawable/estilo_edittext_cadastros"
+                android:textCursorDrawable="@drawable/estilo_cursor"
+                android:textColorHint="#000"
+                android:textSize="15dp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnCadastrarEspectador"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/estilo_botao"
+                    android:textColor="#F5F7F7"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="Cadastrar" />
+
+                <Button
+                    android:id="@+id/btnCancelarEspectador"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/estilo_botao"
+                    android:textColor="#F5F7F7"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="Voltar"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
